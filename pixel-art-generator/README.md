@@ -1,6 +1,7 @@
 # Pixel Art Generator
 
 這是一個可以讓你創建像素藝術的網頁應用。
+<img width="422" alt="image" src="https://github.com/Cherylruei/100-days-of-Javascript/assets/117626038/79c127f3-911c-455d-8852-6d05ab6e79eb">
 
 ## 安裝
 
