@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="panel">
+          <div class="slider-container">
+            <div class="slider">
+              <input
+                type="range"
+                name="width"
+                id="myWidth"
+                value="25"
+                min="1"
+                max="35"
+                class="slider"
+              />
+              <label for="width"
+                >Grid width: <span id="widthSliderValue">25</span></label
+              >
+            </div>
+            <div class="slider">
+              <input
+                type="range"
+                name="height"
+                id="myHeight"
+                value="25"
+                min="1"
+                max="35"
+                class="slider"
+              />
+              <label for="height"
+                >Grid height: <span id="heightSliderValue">25</span></label
+              >
+            </div>
+          </div>
+          <div class="menu-btn">
+            <button class="controller-btn" id="generate">Generate Grid</button>
+            <button class="controller-btn" id="clear">Clear Grid</button>
+            <div class="color-selector">
+              <label for="color">Color Selector</label>
+              <input type="color" id="color" value="#000000" />
+            </div>
+            <button class="controller-btn" id="paint">Paint</button>
+            <button class="controller-btn" id="erase">Erase</button>
+            <button class="controller-btn" id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="paint-area">
+          <div class="display" id="displayGrid">
+            <!-- 這裡預估有 35*35個格子 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
